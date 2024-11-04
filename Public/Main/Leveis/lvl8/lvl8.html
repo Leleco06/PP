@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 8: Discussão dos Resultados</title>
+    <link rel="stylesheet" href="../lvl8/lvl8.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Módulo 8: Discussão dos Resultados -->
+
+        <!-- Objetivo do Módulo -->
+        <div class="content active" id="content1">
+            <h2>Módulo 8: Discussão dos Resultados</h2>
+            <p><strong>Objetivo do Módulo:</strong><br>
+                Este módulo ensina o estudante a interpretar criticamente os resultados da pesquisa, relacionando-os ao referencial teórico e identificando contribuições, implicações e limitações. A discussão dos resultados permite ao estudante contextualizar os dados e propor novas perspectivas.
+            </p>
+            <button onclick="showNext('content1', 'content2')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 1 -->
+        <div class="content" id="content2">
+            <h2>1. O que é a Discussão dos Resultados?</h2>
+            <p>A discussão dos resultados é a parte do TCC onde o pesquisador analisa as descobertas, explicando seu significado e implicações. É o momento de refletir sobre os dados, questionar e contextualizar os resultados à luz das teorias e estudos prévios. Esta seção é essencial para demonstrar o entendimento profundo do tema.</p>
+            <button onclick="showNext('content2', 'content3')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 2 -->
+        <div class="content" id="content3">
+            <h2>2. Relacionando Resultados ao Referencial Teórico</h2>
+            <p>Nesta etapa, é importante conectar as descobertas do TCC com o referencial teórico apresentado anteriormente. Isso significa comparar os resultados com outros estudos, verificar se os dados confirmam ou contradizem as teorias existentes e discutir as razões para qualquer discrepância observada.</p>
+            <button onclick="showNext('content3', 'question1')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 1 -->
+        <div class="question" id="question1">
+            <h2>Pergunta: Por que é importante relacionar os resultados ao referencial teórico?</h2>
+            <form>
+                <input type="radio" id="q1option1" name="q1answer" value="A">
+                <label for="q1option1">Para validar os resultados com base em estudos e teorias existentes.</label><br>
+
+                <input type="radio" id="q1option2" name="q1answer" value="B">
+                <label for="q1option2">Para substituir a revisão de literatura.</label><br>
+
+                <input type="radio" id="q1option3" name="q1answer" value="C">
+                <label for="q1option3">Para evitar a análise dos dados.</label><br>
+
+                <input type="radio" id="q1option4" name="q1answer" value="D">
+                <label for="q1option4">Para eliminar qualquer possível erro na pesquisa.</label><br>
+            </form>
+            <button onclick="checkAnswer('q1answer', 'A', 'question1', 'content4')">Responder</button>
+            <div id="feedback1"></div>
+        </div>
+
+        <!-- Conteúdo 3 -->
+        <div class="content" id="content4">
+            <h2>3. Identificação de Contribuições e Implicações</h2>
+            <p>A discussão deve incluir as contribuições do estudo para o campo acadêmico e suas implicações práticas. Questione como os resultados agregam valor à área de estudo e como podem ser aplicados na prática. Isso torna o TCC relevante não apenas teoricamente, mas também no âmbito profissional.</p>
+            <button onclick="showNext('content4', 'question2')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question" id="question2">
+            <h2>Pergunta: Qual é o objetivo de incluir contribuições e implicações na discussão dos resultados?</h2>
+            <form>
+                <input type="radio" id="q2option1" name="q2answer" value="A">
+                <label for="q2option1">Destacar a relevância do estudo tanto no campo acadêmico quanto profissional.</label><br>
+
+                <input type="radio" id="q2option2" name="q2answer" value="B">
+                <label for="q2option2">Evitar qualquer relação com o referencial teórico.</label><br>
+
+                <input type="radio" id="q2option3" name="q2answer" value="C">
+                <label for="q2option3">Excluir a necessidade de análise estatística.</label><br>
+
+                <input type="radio" id="q2option4" name="q2answer" value="D">
+                <label for="q2option4">Concluir o TCC sem revisar o conteúdo.</label><br>
+            </form>
+            <button onclick="checkAnswer('q2answer', 'A', 'question2', 'content5')">Responder</button>
+            <div id="feedback2"></div>
+        </div>
+
+        <!-- Conteúdo 4 -->
+        <div class="content" id="content5">
+            <h2>4. Limitações e Recomendações para Trabalhos Futuros</h2>
+            <p>Reconhecer as limitações do estudo é fundamental para demonstrar transparência e maturidade acadêmica. As limitações podem incluir fatores como tamanho de amostra, tempo ou acesso a dados específicos. Além disso, as recomendações para futuras pesquisas permitem que outros pesquisadores aprofundem ou ampliem o estudo em novas direções.</p>
+            <button onclick="showNext('content5', 'conclusion')">Próximo</button>
+        </div>
+
+        <!-- Conclusão do Módulo -->
+        <div class="content" id="conclusion">
+            <h2>Conclusão do Módulo 8: Discussão dos Resultados</h2>
+            <p>A discussão dos resultados é uma das seções mais importantes do TCC, onde o estudante reflete criticamente sobre as descobertas, destacando as contribuições do estudo e suas limitações. Relacionar os resultados ao referencial teórico e propor novas direções para a pesquisa fortalece a relevância do trabalho e sua aplicação acadêmica e prática.</p>
+            <button onclick="redirecionar()">Voltar para a página principal</button>
+        </div>
+
+    </div>
+
+    <script src="../lvl8/lvl8.js"></script>
+</body>
+
+</html>

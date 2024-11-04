@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 9: Conclusão e Recomendações</title>
+    <link rel="stylesheet" href="../lvl9/lvl9.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Módulo 9: Conclusão e Recomendações -->
+
+        <!-- Objetivo do Módulo -->
+        <div class="content active" id="content1">
+            <h2>Módulo 9: Conclusão e Recomendações</h2>
+            <p><strong>Objetivo do Módulo:</strong><br>
+                Orientar o estudante na elaboração de uma conclusão eficaz e bem estruturada, que sintetize os principais achados do TCC e apresente sugestões para futuras pesquisas, promovendo a continuidade do estudo e relevância na área acadêmica.
+            </p>
+            <button onclick="showNext('content1', 'content2')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 1 -->
+        <div class="content" id="content2">
+            <h2>1. A Importância da Conclusão no TCC</h2>
+            <p>A conclusão é a parte final do TCC e tem um papel essencial: ela oferece uma visão geral dos principais resultados obtidos e indica se os objetivos da pesquisa foram atingidos. Além disso, é uma oportunidade para destacar o valor do trabalho acadêmico realizado e como ele contribui para o campo de estudo. A conclusão deve ser objetiva e direta, ressaltando os pontos mais relevantes da pesquisa e seu impacto.</p>
+            <button onclick="showNext('content2', 'content3')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 2 -->
+        <div class="content" id="content3">
+            <h2>2. Estrutura da Conclusão</h2>
+            <p>A estrutura de uma boa conclusão geralmente inclui:</p>
+            <ul>
+                <li><strong>Síntese dos Resultados:</strong> Resuma os principais achados do estudo, explicando como eles respondem à questão de pesquisa e atendem aos objetivos propostos no início do trabalho.</li>
+                <li><strong>Contribuições e Relevância:</strong> Explique a importância do estudo tanto para o meio acadêmico quanto, se aplicável, para o setor profissional. Indique como seu trabalho agrega valor e conhecimento à área.</li>
+                <li><strong>Limitações do Estudo:</strong> Reconheça possíveis limitações que possam ter impactado o estudo, como restrições de tempo, de acesso a dados ou de tamanho de amostra. Isso mostra transparência e integridade acadêmica.</li>
+            </ul>
+            <button onclick="showNext('content3', 'question1')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 1 -->
+        <div class="question" id="question1">
+            <h2>Pergunta: Qual é o principal objetivo da conclusão em um TCC?</h2>
+            <form>
+                <input type="radio" id="q1option1" name="q1answer" value="A">
+                <label for="q1option1">Introduzir novos conceitos para análise.</label><br>
+
+                <input type="radio" id="q1option2" name="q1answer" value="B">
+                <label for="q1option2">Resumir e sintetizar os principais resultados obtidos no estudo.</label><br>
+
+                <input type="radio" id="q1option3" name="q1answer" value="C">
+                <label for="q1option3">Repetir o referencial teórico.</label><br>
+
+                <input type="radio" id="q1option4" name="q1answer" value="D">
+                <label for="q1option4">Discutir a metodologia utilizada.</label><br>
+            </form>
+            <button onclick="checkAnswer('q1answer', 'B', 'question1', 'content4')">Responder</button>
+            <div id="feedback1"></div>
+        </div>
+
+        <!-- Conteúdo 3 -->
+        <div class="content" id="content4">
+            <h2>3. Formulando Recomendações para Trabalhos Futuros</h2>
+            <p>As recomendações para futuras pesquisas representam a contribuição do estudo para a continuidade do conhecimento. Nesta seção, o autor sugere novos caminhos que outros pesquisadores podem seguir, como:</p>
+            <ul>
+                <li><strong>Sugestões de Novos Temas:</strong> Proponha temas que poderiam ser explorados em pesquisas futuras, ampliando os conceitos ou descobertas do estudo.</li>
+                <li><strong>Ampliação de Métodos:</strong> Recomende métodos que poderiam fornecer análises mais detalhadas, como a inclusão de novas variáveis ou amostras maiores.</li>
+                <li><strong>Exploração de Diferentes Contextos:</strong> Sugira a aplicação da pesquisa em outros contextos ou populações para verificar a generalização dos resultados.</li>
+            </ul>
+            <button onclick="showNext('content4', 'content5')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 4 -->
+        <div class="content" id="content5">
+            <h2>4. Dicas para uma Conclusão Eficaz</h2>
+            <p>Para que a conclusão seja clara e impactante, considere as seguintes dicas:</p>
+            <ul>
+                <li><strong>Seja Objetivo e Conciso:</strong> A conclusão deve ser direta, focando nos principais achados e evitando redundâncias.</li>
+                <li><strong>Não Introduza Novos Conceitos:</strong> A conclusão deve se concentrar apenas nos resultados discutidos no desenvolvimento do trabalho.</li>
+                <li><strong>Revise com Atenção:</strong> Uma boa conclusão finaliza o TCC com clareza, deixando uma impressão duradoura no leitor.</li>
+            </ul>
+            <button onclick="showNext('content5', 'question2')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question" id="question2">
+            <h2>Pergunta: O que deve ser evitado na conclusão do TCC?</h2>
+            <form>
+                <input type="radio" id="q2option1" name="q2answer" value="A">
+                <label for="q2option1">Síntese dos resultados principais.</label><br>
+
+                <input type="radio" id="q2option2" name="q2answer" value="B">
+                <label for="q2option2">Reconhecimento das limitações.</label><br>
+
+                <input type="radio" id="q2option3" name="q2answer" value="C">
+                <label for="q2option3">Introdução de novos conceitos ou dados.</label><br>
+
+                <input type="radio" id="q2option4" name="q2answer" value="D">
+                <label for="q2option4">Apresentação das contribuições do estudo.</label><br>
+            </form>
+            <button onclick="checkAnswer('q2answer', 'C', 'question2', 'conclusion')">Responder</button>
+            <div id="feedback2"></div>
+        </div>
+
+        <!-- Conclusão do Módulo -->
+        <div class="content" id="conclusion">
+            <h2>Conclusão do Módulo 9: Conclusão e Recomendações</h2>
+            <p>Este módulo mostrou a importância de uma conclusão bem estruturada e fundamentada. Uma boa conclusão destaca os principais achados, contribuições e limitações do estudo e apresenta recomendações que incentivam a continuidade da pesquisa em novas direções, fortalecendo o impacto acadêmico do TCC.</p>
+            <button onclick="redirecionar()">Voltar para a página principal</button>
+        </div>
+
+    </div>
+
+    <script src="../lvl9/lvl9.js"></script>
+</body>
+
+</html>

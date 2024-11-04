@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 10: Formatação e Normas ABNT</title>
+    <link rel="stylesheet" href="../lvl10/lvl10.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Módulo 10: Formatação e Normas ABNT -->
+
+        <!-- Objetivo do Módulo -->
+        <div class="content active" id="content1">
+            <h2>Módulo 10: Formatação e Normas ABNT</h2>
+            <p><strong>Objetivo do Módulo:</strong><br>
+                Ensinar o estudante sobre as normas de formatação ABNT e como aplicá-las no TCC para garantir padronização, clareza e profissionalismo no trabalho acadêmico.
+            </p>
+            <button onclick="showNext('content1', 'content2')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 1 -->
+        <div class="content" id="content2">
+            <h2>1. A Importância da Formatação no TCC</h2>
+            <p>Uma formatação adequada demonstra organização e profissionalismo. Seguir normas como as da ABNT não só facilita a leitura e avaliação, mas também dá ao trabalho uma aparência mais formal. As normas ABNT ajudam a garantir que o TCC seja padronizado, o que facilita a compreensão dos avaliadores.</p>
+            <button onclick="showNext('content2', 'content3')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 2 -->
+        <div class="content" id="content3">
+            <h2>2. Principais Normas ABNT para o TCC</h2>
+            <ul>
+                <li><strong>Capa:</strong> Nome da instituição, curso, título, nome do autor, cidade e ano de conclusão.</li>
+                <li><strong>Folha de Rosto:</strong> Título, subtítulo (se houver), autor, natureza do trabalho, orientador, cidade e ano.</li>
+                <li><strong>Resumo e Palavras-Chave:</strong> Resumo com 150-250 palavras e de três a cinco palavras-chave.</li>
+                <li><strong>Sumário:</strong> Lista de seções e subseções com suas páginas.</li>
+                <li><strong>Citações e Referências:</strong> Normas específicas para citações e referências, seguindo ordem alfabética.</li>
+                <li><strong>Fonte, Espaçamento e Margens:</strong> Arial ou Times New Roman, tamanho 12 para o texto, espaçamento 1,5, margens de 3 cm (superior e esquerda) e 2 cm (inferior e direita).</li>
+            </ul>
+            <button onclick="showNext('content3', 'content4')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 3 -->
+        <div class="content" id="content4">
+            <h2>3. Elementos Pré-Textuais, Textuais e Pós-Textuais</h2>
+            <p>A estrutura do TCC conforme as normas ABNT é dividida em:</p>
+            <ul>
+                <li><strong>Elementos Pré-Textuais:</strong> Capa, folha de rosto, resumo, sumário.</li>
+                <li><strong>Elementos Textuais:</strong> Introdução, desenvolvimento, conclusão.</li>
+                <li><strong>Elementos Pós-Textuais:</strong> Referências, anexos e apêndices.</li>
+            </ul>
+            <button onclick="showNext('content4', 'content5')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 4 -->
+        <div class="content" id="content5">
+            <h2>4. Dicas para uma Boa Formatação</h2>
+            <p>Algumas dicas para garantir uma formatação eficaz:</p>
+            <ul>
+                <li><strong>Revise o Sumário:</strong> Verifique que as numerações das seções e páginas estão corretas.</li>
+                <li><strong>Use um Software de Referências:</strong> Ferramentas como Mendeley ou Zotero ajudam a organizar e formatar automaticamente as referências.</li>
+                <li><strong>Formatação Automática:</strong> Utilize recursos de formatação automática para títulos, subtítulos e numeração de páginas.</li>
+            </ul>
+            <button onclick="showNext('content5', 'question1')">Iniciar Quiz</button>
+        </div>
+
+        <!-- Pergunta 1 -->
+        <div class="question" id="question1">
+            <h2>Pergunta 1: Qual é a principal finalidade de formatar o TCC conforme as normas ABNT?</h2>
+            <form>
+                <input type="radio" id="q1option1" name="q1answer" value="A">
+                <label for="q1option1">Tornar o trabalho mais bonito visualmente.</label><br>
+
+                <input type="radio" id="q1option2" name="q1answer" value="B">
+                <label for="q1option2">Facilitar a leitura e padronizar a apresentação acadêmica.</label><br>
+
+                <input type="radio" id="q1option3" name="q1answer" value="C">
+                <label for="q1option3">Aumentar o número de páginas do trabalho.</label><br>
+
+                <input type="radio" id="q1option4" name="q1answer" value="D">
+                <label for="q1option4">Tornar o TCC mais acessível ao público em geral.</label><br>
+            </form>
+            <button onclick="checkAnswer('q1answer', 'B', 'question1', 'question2')">Responder</button>
+            <div id="feedback1"></div>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question" id="question2">
+            <h2>Pergunta 2: Qual fonte e tamanho são recomendados para o texto principal do TCC?</h2>
+            <form>
+                <input type="radio" id="q2option1" name="q2answer" value="A">
+                <label for="q2option1">Comic Sans, tamanho 14.</label><br>
+
+                <input type="radio" id="q2option2" name="q2answer" value="B">
+                <label for="q2option2">Arial ou Times New Roman, tamanho 12.</label><br>
+
+                <input type="radio" id="q2option3" name="q2answer" value="C">
+                <label for="q2option3">Calibri, tamanho 16.</label><br>
+
+                <input type="radio" id="q2option4" name="q2answer" value="D">
+                <label for="q2option4">Qualquer fonte, tamanho 10.</label><br>
+            </form>
+            <button onclick="checkAnswer('q2answer', 'B', 'question2', 'question3')">Responder</button>
+            <div id="feedback2"></div>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question" id="question3">
+            <h2>Pergunta 3: O que deve constar na capa do TCC?</h2>
+            <form>
+                <input type="radio" id="q3option1" name="q3answer" value="A">
+                <label for="q3option1">Título, nome do autor, e-mail e telefone.</label><br>
+
+                <input type="radio" id="q3option2" name="q3answer" value="B">
+                <label for="q3option2">Nome da instituição, curso, título, nome do autor, cidade e ano.</label><br>
+
+                <input type="radio" id="q3option3" name="q3answer" value="C">
+                <label for="q3option3">Título e nome do orientador.</label><br>
+
+                <input type="radio" id="q3option4" name="q3answer" value="D">
+                <label for="q3option4">Apenas o título e a data de entrega.</label><br>
+            </form>
+            <button onclick="checkAnswer('q3answer', 'B', 'question3', 'question4')">Responder</button>
+            <div id="feedback3"></div>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="question" id="question4">
+            <h2>Pergunta 4: Quais elementos compõem a parte pós-textual do TCC?</h2>
+            <form>
+                <input type="radio" id="q4option1" name="q4answer" value="A">
+                <label for="q4option1">Introdução e conclusão.</label><br>
+
+                <input type="radio" id="q4option2" name="q4answer" value="B">
+                <label for="q4option2">Sumário e referências.</label><br>
+
+                <input type="radio" id="q4option3" name="q4answer" value="C">
+                <label for="q4option3">Referências, anexos e apêndices.</label><br>
+
+                <input type="radio" id="q4option4" name="q4answer" value="D">
+                <label for="q4option4">Resumo e referências.</label><br>
+            </form>
+            <button onclick="checkAnswer('q4answer', 'C', 'question4', 'conclusion')">Responder</button>
+            <div id="feedback4"></div>
+        </div>
+
+        <!-- Conclusão do Módulo -->
+        <div class="content" id="conclusion">
+            <h2>Conclusão do Módulo 10: Formatação e Normas ABNT</h2>
+            <p>Aplicar as normas ABNT de forma correta garante a padronização e profissionalismo no TCC. Este módulo orientou o estudante a estruturar seu trabalho conforme os padrões exigidos, facilitando a leitura e compreensão do conteúdo.</p>
+            <button onclick="redirecionar()">Voltar para a página principal</button>
+        </div>
+
+    </div>
+
+    <script src="../lvl10/lvl10.js"></script>
+</body>
+
+</html>

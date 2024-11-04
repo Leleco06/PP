@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 4: Planejamento e Cronograma</title>
+    <link rel="stylesheet" href="../lvl4/lvl4.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Módulo 4: Planejamento e Cronograma -->
+
+        <!-- Objetivo do Módulo -->
+        <div class="content active" id="content1">
+            <h2>Módulo 4: Planejamento e Cronograma</h2>
+            <p><strong>Objetivo do Módulo:</strong><br>
+                O objetivo deste módulo é ajudar o estudante a organizar as etapas do TCC com um cronograma realista e estruturado, de forma que cada fase seja concluída no prazo e com tranquilidade.
+            </p>
+            <button onclick="showNext('content1', 'content2')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 1 -->
+        <div class="content" id="content2">
+            <h2>1. A Importância do Planejamento</h2>
+            <p>Planejar é essencial para o sucesso do TCC, pois permite que o estudante mantenha o foco, cumpra os prazos e distribua as tarefas de forma equilibrada. Um bom planejamento reduz o risco de atrasos e evita a sobrecarga no final do processo.</p>
+            <button onclick="showNext('content2', 'question1')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 1 -->
+        <div class="question" id="question1">
+            <h2>Pergunta 1: Por que o planejamento é importante para o TCC?</h2>
+            <form>
+                <input type="radio" id="q1option1" name="q1answer" value="A">
+                <label for="q1option1">Para garantir que todas as etapas sejam concluídas dentro do prazo.</label><br>
+
+                <input type="radio" id="q1option2" name="q1answer" value="B">
+                <label for="q1option2">Para verificar se o estudante está cumprindo a carga horária do curso.</label><br>
+
+                <input type="radio" id="q1option3" name="q1answer" value="C">
+                <label for="q1option3">Para evitar que o orientador faça mudanças no trabalho.</label><br>
+
+                <input type="radio" id="q1option4" name="q1answer" value="D">
+                <label for="q1option4">Para garantir tempo para atividades extracurriculares.</label><br>
+            </form>
+            <button onclick="checkAnswer('q1answer', 'A', 'question1', 'content3')">Responder</button>
+            <div id="feedback1"></div>
+        </div>
+
+        <!-- Conteúdo 2 -->
+        <div class="content" id="content3">
+            <h2>2. Etapas Principais do Cronograma</h2>
+            <p>Para facilitar o progresso, é útil dividir o TCC em algumas etapas principais:</p>
+            <ul>
+                <li><strong>Escolha do Tema:</strong> Definir um tema relevante e específico.</li>
+                <li><strong>Revisão de Literatura e Coleta de Dados:</strong> Buscar materiais de pesquisa e coletar dados.</li>
+                <li><strong>Redação e Revisão do TCC:</strong> Escrever as seções do trabalho e revisar o conteúdo.</li>
+                <li><strong>Preparação para a Entrega:</strong> Organizar e revisar o trabalho final antes da entrega.</li>
+            </ul>
+            <button onclick="showNext('content3', 'question2')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question" id="question2">
+            <h2>Pergunta 2: Quais são as etapas principais de um cronograma de TCC?</h2>
+            <form>
+                <input type="radio" id="q2option1" name="q2answer" value="A">
+                <label for="q2option1">Escolha do tema, revisão de literatura, redação e preparação para a entrega.</label><br>
+
+                <input type="radio" id="q2option2" name="q2answer" value="B">
+                <label for="q2option2">Somente escolha do tema e revisão final.</label><br>
+
+                <input type="radio" id="q2option3" name="q2answer" value="C">
+                <label for="q2option3">Preparação da apresentação final.</label><br>
+
+                <input type="radio" id="q2option4" name="q2answer" value="D">
+                <label for="q2option4">Revisão final e envio para publicação.</label><br>
+            </form>
+            <button onclick="checkAnswer('q2answer', 'A', 'question2', 'content4')">Responder</button>
+            <div id="feedback2"></div>
+        </div>
+
+        <!-- Conteúdo 3 -->
+        <div class="content" id="content4">
+            <h2>3. Ferramentas Úteis para o Planejamento</h2>
+            <p>Ferramentas que facilitam o acompanhamento do cronograma:</p>
+            <ul>
+                <li><strong>Planilhas:</strong> Google Sheets ou Excel para organizar as etapas.</li>
+                <li><strong>Aplicativos de Gestão de Projetos:</strong> Trello ou Notion para monitorar atividades e prazos.</li>
+                <li><strong>Calendários:</strong> Google Calendar para definir prazos e lembretes.</li>
+            </ul>
+            <button onclick="showNext('content4', 'question3')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question" id="question3">
+            <h2>Pergunta 3: Quais ferramentas podem ajudar no planejamento do TCC?</h2>
+            <form>
+                <input type="radio" id="q3option1" name="q3answer" value="A">
+                <label for="q3option1">Redes sociais.</label><br>
+
+                <input type="radio" id="q3option2" name="q3answer" value="B">
+                <label for="q3option2">Aplicativos de gestão de projetos, planilhas e calendários.</label><br>
+
+                <input type="radio" id="q3option3" name="q3answer" value="C">
+                <label for="q3option3">Calculadora para contar as páginas do TCC.</label><br>
+
+                <input type="radio" id="q3option4" name="q3answer" value="D">
+                <label for="q3option4">Mensagens de texto para comunicar com o orientador.</label><br>
+            </form>
+            <button onclick="checkAnswer('q3answer', 'B', 'question3', 'content5')">Responder</button>
+            <div id="feedback3"></div>
+        </div>
+
+        <!-- Conteúdo 4 -->
+        <div class="content" id="content5">
+            <h2>4. Validando o Cronograma</h2>
+            <p>Antes de iniciar, valide seu cronograma perguntando a si mesmo:</p>
+            <ul>+
+                <li>Dividi bem o tempo entre as etapas?</li>
+                <li>Incluí tempo para imprevistos?</li>
+                <li>Reservei tempo para uma revisão final?</li>
+            </ul>
+            <button onclick="showNext('content5', 'question4')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="question" id="question4">
+            <h2>Pergunta 4: Qual pergunta é útil para validar o cronograma?</h2>
+            <form>
+                <input type="radio" id="q4option1" name="q4answer" value="A">
+                <label for="q4option1">Reservei tempo suficiente para uma revisão final?</label><br>
+
+                <input type="radio" id="q4option2" name="q4answer" value="B">
+                <label for="q4option2">Divulguei o tema nas redes sociais?</label><br>
+
+                <input type="radio" id="q4option3" name="q4answer" value="C">
+                <label for="q4option3">Escrevi tudo sem um cronograma.</label><br>
+                
+                <input type="radio" id="q4option4" name="q4answer" value="D">
+                <label for="q4option4">Marquei todos os colegas em posts sobre o TCC.</label><br>
+            </form>
+            <button onclick="checkAnswer('q4answer', 'A', 'question4', 'conclusion')">Responder</button>
+            <div id="feedback4"></div>
+        </div>
+
+        <!-- Conclusão do Módulo -->
+        <div class="content" id="conclusion">
+            <h2>Conclusão do Módulo 4: Planejamento e Cronograma</h2>
+            <p>Organizar o TCC com um cronograma eficiente é essencial para o sucesso. Este módulo mostrou como dividir o trabalho em etapas, usar ferramentas de organização e validar o cronograma. Assim, o estudante pode concluir o TCC de forma estruturada e dentro do prazo.</p>
+            <button onclick="redirecionar()">Voltar para a página principal</button>
+        </div>
+
+    </div>
+
+    <script src="../lvl4/lvl4.js"></script>
+</body>
+
+</html>

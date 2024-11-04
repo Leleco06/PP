@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2: Escolha do Tema</title>
+    <link rel="stylesheet" href="../lvl2/lvl2.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Módulo 2: Escolha do Tema -->
+
+        <!-- Conteúdo 1 -->
+        <div class="content active" id="content1">
+            <h2>1. A Importância da Escolha do Tema</h2>
+            <p>A escolha do tema é uma das primeiras e mais importantes etapas do TCC. Um tema bem selecionado facilita o desenvolvimento do trabalho, mantém o interesse do estudante e contribui para a relevância acadêmica do TCC. Por outro lado, um tema mal escolhido pode tornar o processo cansativo e prejudicar o resultado final.</p>
+            <button onclick="showNext('content1', 'question1')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 1 -->
+        <div class="question" id="question1">
+            <h2>Pergunta 1: Por que a escolha do tema é uma etapa tão importante no TCC?</h2>
+            <form>
+                <input type="radio" id="q1option1" name="q1answer" value="A">
+                <label for="q1option1">Porque um tema bem escolhido facilita o desenvolvimento do trabalho e mantém o interesse do estudante.</label><br>
+                <input type="radio" id="q1option2" name="q1answer" value="B">
+                <label for="q1option2">Porque é a única etapa que influencia a nota final.</label><br>
+                <input type="radio" id="q1option3" name="q1answer" value="C">
+                <label for="q1option3">Porque o tema define automaticamente as fontes de pesquisa a serem usadas.</label><br>
+                <input type="radio" id="q1option4" name="q1answer" value="D">
+                <label for="q1option4">Porque um tema difícil sempre garante um TCC de alta qualidade.</label><br>
+            </form>
+            <button onclick="checkAnswer('q1answer', 'A', 'question1', 'content2')">Responder</button>
+            <div id="feedback1"></div>
+        </div>
+
+        <!-- Conteúdo 2 -->
+        <div class="content" id="content2">
+            <h2>2. Critérios para Escolher um Tema</h2>
+            <p>Alguns critérios fundamentais para a escolha de um bom tema para o TCC incluem:</p>
+            <ul>
+                <li><strong>Interesse Pessoal:</strong> Escolher um tema que desperte sua curiosidade e entusiasmo ajudará a manter a motivação ao longo do processo.</li>
+                <li><strong>Relevância Acadêmica e Profissional:</strong> O tema deve ser significativo para a área de estudo e, idealmente, trazer uma contribuição para o conhecimento acadêmico ou para a prática profissional.</li>
+                <li><strong>Viabilidade da Pesquisa:</strong> O tema precisa ser viável em termos de acesso a dados, disponibilidade de fontes de pesquisa, tempo e recursos disponíveis.</li>
+                <li><strong>Originalidade e Contribuição:</strong> Escolher um tema que agregue algo novo ou diferente ao conhecimento existente na área aumenta a qualidade do TCC.</li>
+            </ul>
+            <button onclick="showNext('content2', 'question2')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question" id="question2">
+            <h2>Pergunta 2: Qual dos seguintes critérios é importante para a escolha do tema?</h2>
+            <form>
+                <input type="radio" id="q2option1" name="q2answer" value="A">
+                <label for="q2option1">Escolher um tema que o orientador goste, mesmo que não seja interessante para você.</label><br>
+                <input type="radio" id="q2option2" name="q2answer" value="B">
+                <label for="q2option2">Escolher um tema relevante para sua área de estudo e de interesse pessoal.</label><br>
+                <input type="radio" id="q2option3" name="q2answer" value="C">
+                <label for="q2option3">Escolher o tema mais simples possível para evitar esforço.</label><br>
+                <input type="radio" id="q2option4" name="q2answer" value="D">
+                <label for="q2option4">Escolher um tema popular entre seus colegas.</label><br>
+            </form>
+            <button onclick="checkAnswer('q2answer', 'B', 'question2', 'content3')">Responder</button>
+            <div id="feedback2"></div>
+        </div>
+
+        <!-- Conteúdo 3 -->
+        <div class="content" id="content3">
+            <h2>3. Estratégias para Encontrar um Tema</h2>
+            <p>Algumas estratégias úteis para definir um tema são:</p>
+            <ul>
+                <li><strong>Revisão de Assuntos de Interesse:</strong> Faça uma lista de tópicos ou áreas que você gostou ao longo do curso e que são importantes na sua área de estudo.</li>
+                <li><strong>Pesquisa Inicial:</strong> Realize uma pesquisa preliminar sobre temas que chamam sua atenção para verificar a disponibilidade de material e dados sobre o assunto.</li>
+                <li><strong>Consultoria com Orientador:</strong> Converse com seu orientador para discutir suas ideias e obter feedback sobre temas viáveis e relevantes.</li>
+                <li><strong>Análise de Trabalhos Anteriores:</strong> Revisar TCCs de anos anteriores pode ajudar a entender quais temas foram explorados e a encontrar inspiração para o seu trabalho.</li>
+            </ul>
+            <button onclick="showNext('content3', 'question3')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question" id="question3">
+            <h2>Pergunta 3: Por que é importante realizar uma pesquisa inicial sobre o tema escolhido?</h2>
+            <form>
+                <input type="radio" id="q3option1" name="q3answer" value="A">
+                <label for="q3option1">Para garantir que o tema seja completamente inexplorado.</label><br>
+                <input type="radio" id="q3option2" name="q3answer" value="B">
+                <label for="q3option2">Para verificar se há material e fontes suficientes para desenvolver a pesquisa.</label><br>
+                <input type="radio" id="q3option3" name="q3answer" value="C">
+                <label for="q3option3">Para que o orientador possa escolher seu tema para você.</label><br>
+                <input type="radio" id="q3option4" name="q3answer" value="D">
+                <label for="q3option4">Para evitar que outros alunos escolham o mesmo tema.</label><br>
+            </form>
+            <button onclick="checkAnswer('q3answer', 'B', 'question3', 'content4')">Responder</button>
+            <div id="feedback3"></div>
+        </div>
+
+        <!-- Conteúdo 4 -->
+        <div class="content" id="content4">
+            <h2>4. Perguntas para Refinar a Escolha do Tema</h2>
+            <p>Para ajudar a definir e refinar o tema do TCC, faça as seguintes perguntas:</p>
+            <ul>
+                <li>O tema é específico e delimitado?</li>
+                <li>Existem dados ou fontes de pesquisa disponíveis sobre este tema?</li>
+                <li>Este tema contribui para minha área de formação acadêmica ou prática profissional?</li>
+                <li>Consigo desenvolver este tema dentro do prazo e dos recursos disponíveis?</li>
+            </ul>
+            <button onclick="showNext('content4', 'question4')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="question" id="question4">
+            <h2>Pergunta 4: Qual das perguntas abaixo pode ajudar a refinar a escolha do tema?</h2>
+            <form>
+                <input type="radio" id="q4option1" name="q4answer" value="A">
+                <label for="q4option1">O tema é popular na minha turma?</label><br>
+                <input type="radio" id="q4option2" name="q4answer" value="B">
+                <label for="q4option2">Eu consigo desenvolver o tema dentro do prazo e recursos disponíveis?</label><br>
+                <input type="radio" id="q4option3" name="q4answer" value="C">
+                <label for="q4option3">Meu orientador acha o tema fácil?</label><br>
+                <input type="radio" id="q4option4" name="q4answer" value="D">
+                <label for="q4option4">O tema é curto o suficiente para evitar muito trabalho?</label><br>
+            </form>
+            <button onclick="checkAnswer('q4answer', 'B', 'question4', 'conclusion')">Responder</button>
+            <div id="feedback4"></div>
+        </div>
+
+        <!-- Conclusão do Módulo -->
+        <div class="content" id="conclusion">
+            <h2>Conclusão do Módulo 2: Escolha do Tema</h2>
+            <p>Escolher um tema relevante e viável para o TCC é essencial para o sucesso do trabalho. Com as estratégias e perguntas apresentadas, o estudante pode selecionar um tema que seja ao mesmo tempo interessante e adequado às suas condições e limitações.</p>
+            <button onclick="redirecionar()">Voltar para a página principal</button>
+        </div>
+    </div>
+
+    <script src="../lvl2/lvl2.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 6: Metodologia</title>
+    <link rel="stylesheet" href="../lvl6/lvl6.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Módulo 6: Metodologia -->
+
+        <!-- Objetivo do Módulo -->
+        <div class="content active" id="content1">
+            <h2>Módulo 6: Metodologia</h2>
+            <p><strong>Objetivo do Módulo:</strong><br>
+                Este módulo orienta o estudante na definição e construção da metodologia do TCC, abordando os tipos de pesquisa, a coleta de dados e os procedimentos para análise, com o objetivo de estruturar a pesquisa de forma clara e organizada.
+            </p>
+            <button onclick="showNext('content1', 'content2')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 1 -->
+        <div class="content" id="content2">
+            <h2>1. O que é Metodologia</h2>
+            <p>A metodologia é a parte do TCC que explica como a pesquisa será conduzida. Ela define as etapas, métodos e técnicas usados para coletar e analisar dados, garantindo que o estudo tenha uma estrutura sólida e seja replicável. Uma metodologia bem definida ajuda a validar os resultados e contribui para a credibilidade do trabalho.</p>
+            <button onclick="showNext('content2', 'question1')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 1 -->
+        <div class="question" id="question1">
+            <h2>Pergunta 1: Qual é o papel da metodologia no TCC?</h2>
+            <form>
+                <input type="radio" id="q1option1" name="q1answer" value="A">
+                <label for="q1option1">Definir as etapas e métodos da pesquisa para garantir a validade dos resultados.</label><br>
+
+                <input type="radio" id="q1option2" name="q1answer" value="B">
+                <label for="q1option2">Explicar os temas principais do TCC.</label><br>
+
+                <input type="radio" id="q1option3" name="q1answer" value="C">
+                <label for="q1option3">Especificar os resultados esperados da pesquisa.</label><br>
+
+                <input type="radio" id="q1option4" name="q1answer" value="D">
+                <label for="q1option4">Apresentar conclusões iniciais da pesquisa.</label><br>
+            </form>
+            <button onclick="checkAnswer('q1answer', 'A', 'question1', 'content3')">Responder</button>
+            <div id="feedback1"></div>
+        </div>
+
+        <!-- Conteúdo 2 -->
+        <div class="content" id="content3">
+            <h2>2. Tipos de Pesquisa</h2>
+            <p>Existem diferentes tipos de pesquisa que podem ser utilizados em um TCC, cada um adequado a objetivos específicos:</p>
+            <ul>
+                <li><strong>Pesquisa Bibliográfica:</strong> Baseia-se na análise de materiais já publicados, como livros e artigos científicos.</li>
+                <li><strong>Pesquisa de Campo:</strong> Envolve a coleta de dados diretamente no ambiente ou contexto estudado.</li>
+                <li><strong>Pesquisa Experimental:</strong> Realiza experimentos para observar e analisar os efeitos de variáveis controladas.</li>
+            </ul>
+            <button onclick="showNext('content3', 'content4')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 3 -->
+        <div class="content" id="content4">
+            <h2>3. Técnicas de Coleta de Dados</h2>
+            <p>A coleta de dados é a etapa em que o pesquisador reúne informações para analisar e construir os resultados do TCC. Alguns métodos comuns incluem:</p>
+            <ul>
+                <li><strong>Entrevistas:</strong> Coleta de dados através de perguntas abertas ou fechadas com participantes específicos.</li>
+                <li><strong>Questionários:</strong> Utilização de formulários com perguntas objetivas, respondidas por um número maior de pessoas.</li>
+                <li><strong>Observação:</strong> Observação direta do objeto de estudo, sem interferência no ambiente.</li>
+            </ul>
+            <button onclick="showNext('content4', 'question2')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question" id="question2">
+            <h2>Pergunta 2: Qual é o objetivo da coleta de dados na metodologia?</h2>
+            <form>
+                <input type="radio" id="q2option1" name="q2answer" value="A">
+                <label for="q2option1">Reunir informações para análise e construção de resultados no TCC.</label><br>
+
+                <input type="radio" id="q2option2" name="q2answer" value="B">
+                <label for="q2option2">Definir o tema do trabalho.</label><br>
+
+                <input type="radio" id="q2option3" name="q2answer" value="C">
+                <label for="q2option3">Concluir o trabalho sem necessidade de pesquisa.</label><br>
+
+                <input type="radio" id="q2option4" name="q2answer" value="D">
+                <label for="q2option4">Analisar apenas fontes secundárias.</label><br>
+            </form>
+            <button onclick="checkAnswer('q2answer', 'A', 'question2', 'content5')">Responder</button>
+            <div id="feedback2"></div>
+        </div>
+
+        <!-- Conteúdo 4 -->
+        <div class="content" id="content5">
+            <h2>4. Análise e Interpretação dos Dados</h2>
+            <p>Após a coleta, é necessário organizar e interpretar os dados para tirar conclusões relevantes. A análise pode ser quantitativa (usando dados numéricos e estatísticas) ou qualitativa (interpretando informações não numéricas, como opiniões e comportamentos). A interpretação dos dados é fundamental para responder às perguntas da pesquisa e validar o objetivo do TCC.</p>
+            <button onclick="showNext('content5', 'content6')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 5 -->
+        <div class="content" id="content6">
+            <h2>5. Ferramentas e Técnicas de Análise</h2>
+            <p>Existem várias ferramentas que facilitam a análise de dados:</p>
+            <ul>
+                <li><strong>SPSS e Excel:</strong> Para análise estatística e organização de dados quantitativos.</li>
+                <li><strong>NVivo:</strong> Útil para análise de dados qualitativos, como entrevistas e textos.</li>
+                <li><strong>Atlas.ti:</strong> Ferramenta de análise qualitativa que permite mapear e categorizar dados textuais.</li>
+            </ul>
+            <button onclick="showNext('content6', 'question3')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question" id="question3">
+            <h2>Pergunta 3: Qual é o objetivo da análise de dados no TCC?</h2>
+            <form>
+                <input type="radio" id="q3option1" name="q3answer" value="A">
+                <label for="q3option1">Organizar e interpretar os dados para responder às perguntas de pesquisa.</label><br>
+
+                <input type="radio" id="q3option2" name="q3answer" value="B">
+                <label for="q3option2">Definir o tema do trabalho.</label><br>
+
+                <input type="radio" id="q3option3" name="q3answer" value="C">
+                <label for="q3option3">Realizar a introdução do trabalho.</label><br>
+
+                <input type="radio" id="q3option4" name="q3answer" value="D">
+                <label for="q3option4">Encerrar o trabalho sem analisar os dados.</label><br>
+            </form>
+            <button onclick="checkAnswer('q3answer', 'A', 'question3', 'conclusion')">Responder</button>
+            <div id="feedback3"></div>
+        </div>
+
+        <!-- Conclusão do Módulo -->
+        <div class="content" id="conclusion">
+            <h2>Conclusão do Módulo 6: Metodologia</h2>
+            <p>A metodologia é a estrutura que orienta a condução do TCC, fornecendo as bases para coleta, análise e interpretação dos dados. Com uma metodologia bem definida, o estudante consegue garantir a validade e credibilidade dos resultados, embasando a pesquisa de forma sólida.</p>
+            <button onclick="redirecionar()">Voltar para a página principal</button>
+        </div>
+
+    </div>
+
+    <script src="../lvl6/lvl6.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 5: Revisão de Literatura</title>
+    <link rel="stylesheet" href="../lvl5/lvl5.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Módulo 5: Revisão de Literatura -->
+
+        <!-- Objetivo do Módulo -->
+        <div class="content active" id="content1">
+            <h2>Módulo 5: Revisão de Literatura</h2>
+            <p><strong>Objetivo do Módulo:</strong><br>
+                Este módulo orienta o estudante a construir uma revisão de literatura sólida para embasar o TCC, analisando pesquisas e conceitos relevantes, bem como identificando lacunas de conhecimento. A revisão de literatura permite entender o estado atual do conhecimento e fornece a base teórica para o desenvolvimento do TCC.
+            </p>
+            <button onclick="showNext('content1', 'content2')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 1 -->
+        <div class="content" id="content2">
+            <h2>1. O que é a Revisão de Literatura</h2>
+            <p>A revisão de literatura é a análise e interpretação de materiais acadêmicos relevantes, como artigos, livros e teses, relacionados ao tema do TCC. Essa etapa permite que o estudante entenda o que já foi pesquisado sobre o assunto, identifique lacunas de conhecimento e crie uma base teórica sólida. Ela vai além de uma simples descrição, exigindo uma análise crítica das ideias dos autores, que evidencia padrões, divergências e oportunidades para futuras pesquisas.</p>
+            <button onclick="showNext('content2', 'question1')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 1 -->
+        <div class="question" id="question1">
+            <h2>Pergunta 1: Qual é o papel da revisão de literatura no TCC?</h2>
+            <form>
+                <input type="radio" id="q1option1" name="q1answer" value="A">
+                <label for="q1option1">Fundamentar teoricamente o TCC e identificar lacunas no conhecimento.</label><br>
+
+                <input type="radio" id="q1option2" name="q1answer" value="B">
+                <label for="q1option2">Descrever estudos anteriores sem análise crítica.</label><br>
+
+                <input type="radio" id="q1option3" name="q1answer" value="C">
+                <label for="q1option3">Selecionar temas de interesse para futuras pesquisas.</label><br>
+
+                <input type="radio" id="q1option4" name="q1answer" value="D">
+                <label for="q1option4">Servir como introdução do trabalho sem análise aprofundada.</label><br>
+            </form>
+            <button onclick="checkAnswer('q1answer', 'A', 'question1', 'content3')">Responder</button>
+            <div id="feedback1"></div>
+        </div>
+
+        <!-- Conteúdo 2 -->
+        <div class="content" id="content3">
+            <h2>2. Fontes Confiáveis e Pesquisa com Palavras-chave</h2>
+            <p>Para construir uma revisão de literatura sólida, é fundamental utilizar fontes confiáveis. Priorize artigos revisados por pares e publicados em bases de dados reconhecidas, como Google Scholar, Scielo e Periódicos CAPES. Comece com palavras-chave diretamente relacionadas ao tema do trabalho para facilitar a busca de informações. A seleção de fontes de alta qualidade aumenta a credibilidade do TCC.</p>
+            <button onclick="showNext('content3', 'content4')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 3 -->
+        <div class="content" id="content4">
+            <h2>3. Estrutura e Organização da Revisão de Literatura</h2>
+            <p>Para facilitar a leitura e entendimento, a revisão de literatura deve ser estruturada com:</p>
+            <ul>
+                <li><strong>Introdução:</strong> Apresenta o tema e os objetivos da revisão, destacando sua relevância para o TCC.</li>
+                <li><strong>Desenvolvimento:</strong> Explora os principais temas, comparando e contrastando diferentes estudos.</li>
+                <li><strong>Conclusão:</strong> Resume os principais pontos e evidencia as lacunas de conhecimento que o TCC irá explorar.</li>
+            </ul>
+            <button onclick="showNext('content4', 'question2')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question" id="question2">
+            <h2>Pergunta 2: Como deve ser estruturada a revisão de literatura?</h2>
+            <form>
+                <input type="radio" id="q2option1" name="q2answer" value="A">
+                <label for="q2option1">Introdução, desenvolvimento e conclusão.</label><br>
+
+                <input type="radio" id="q2option2" name="q2answer" value="B">
+                <label for="q2option2">Título, resumo e referências.</label><br>
+
+                <input type="radio" id="q2option3" name="q2answer" value="C">
+                <label for="q2option3">Tema único, sem divisão.</label><br>
+
+                <input type="radio" id="q2option4" name="q2answer" value="D">
+                <label for="q2option4">Apenas desenvolvimento.</label><br>
+            </form>
+            <button onclick="checkAnswer('q2answer', 'A', 'question2', 'content5')">Responder</button>
+            <div id="feedback2"></div>
+        </div>
+
+        <!-- Conteúdo 4 -->
+        <div class="content" id="content5">
+            <h2>4. Análise Crítica dos Estudos</h2>
+            <p>Além de compilar as informações, uma revisão de literatura exige uma análise crítica dos estudos selecionados. Avalie a metodologia, resultados e conclusões de cada pesquisa, identificando limitações e relevância para o tema. A análise crítica ajuda a estabelecer a relevância do seu TCC e mostra a profundidade do estudo sobre o tema.</p>
+            <button onclick="showNext('content5', 'content6')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 5 -->
+        <div class="content" id="content6">
+            <h2>5. Ferramentas para Organização</h2>
+            <p>Utilizar gerenciadores de referências, como Mendeley ou Zotero, é útil para armazenar e organizar as fontes, facilitando a citação correta. Ferramentas como Notion e Evernote auxiliam na organização das ideias e na criação de resumos, enquanto mapas mentais (MindMeister, XMind) ajudam a visualizar as principais categorias e conexões entre os temas.</p>
+            <button onclick="showNext('content6', 'question3')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question" id="question3">
+            <h2>Pergunta 3: Qual ferramenta é recomendada para organizar referências na revisão de literatura?</h2>
+            <form>
+                <input type="radio" id="q3option1" name="q3answer" value="A">
+                <label for="q3option1">Mendeley ou Zotero</label><br>
+
+                <input type="radio" id="q3option2" name="q3answer" value="B">
+                <label for="q3option2">Calculadora</label><br>
+
+                <input type="radio" id="q3option3" name="q3answer" value="C">
+                <label for="q3option3">Redes sociais</label><br>
+
+                <input type="radio" id="q3option4" name="q3answer" value="D">
+                <label for="q3option4">WordPad</label><br>
+            </form>
+            <button onclick="checkAnswer('q3answer', 'A', 'question3', 'conclusion')">Responder</button>
+            <div id="feedback3"></div>
+        </div>
+
+        <!-- Conclusão do Módulo -->
+        <div class="content" id="conclusion">
+            <h2>Conclusão do Módulo 5: Revisão de Literatura</h2>
+            <p>A revisão de literatura fornece uma base teórica robusta para o TCC, permitindo que o estudante compreenda o conhecimento existente e posicione seu trabalho no contexto acadêmico. Através da análise crítica e organização, é possível identificar lacunas e evidenciar a importância do TCC no avanço do tema escolhido.</p>
+            <button onclick="redirecionar()">Voltar para a página principal</button>
+        </div>
+
+    </div>
+
+    <script src="../lvl5/lvl5.js"></script>
+</body>
+
+</html>

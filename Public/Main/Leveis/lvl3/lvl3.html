@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 3: Estrutura Básica de um TCC</title>
+    <link rel="stylesheet" href="../lvl3/lvl3.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Módulo 3: Estrutura Básica de um TCC -->
+
+        <!-- Objetivo do Módulo -->
+        <div class="content active" id="content1">
+            <h2>Módulo 3: Estrutura Básica de um TCC</h2>
+            <p><strong>Objetivo do Módulo:</strong><br>
+                O objetivo deste módulo é ensinar ao estudante os componentes essenciais da estrutura de um TCC.
+                Compreender a estrutura correta ajuda a organizar o conteúdo de maneira lógica e facilita a leitura e
+                avaliação do trabalho.
+            </p>
+            <button onclick="showNext('content1', 'content2')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 1 -->
+        <div class="content" id="content2">
+            <h2>1. A Importância da Estrutura no TCC</h2>
+            <p>A estrutura do TCC é fundamental para garantir clareza e organização. Seguir uma estrutura padrão ajuda o
+                estudante a organizar suas ideias e permite que o leitor entenda o trabalho de forma mais fluida. A
+                maioria dos TCCs segue uma estrutura composta por introdução, desenvolvimento e conclusão.</p>
+            <button onclick="showNext('content2', 'content3')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 2 -->
+        <div class="content" id="content3">
+            <h2>2. Componentes da Estrutura do TCC</h2>
+            <p><strong>Introdução:</strong> A introdução é a seção inicial do TCC, onde o estudante apresenta o tema,
+                define os objetivos, justifica a importância do trabalho e expõe o problema de pesquisa.</p>
+            <ul>
+                <li><strong>Tema:</strong> Define o foco principal do trabalho.</li>
+                <li><strong>Objetivos:</strong> Resultados que o trabalho pretende alcançar, divididos em objetivos gerais
+                    e específicos.</li>
+                <li><strong>Justificativa:</strong> Explica por que o tema é relevante para a área de estudo.</li>
+                <li><strong>Problema de Pesquisa:</strong> A questão central que o TCC busca responder.</li>
+            </ul>
+            <p><strong>Importância:</strong> Uma introdução bem estruturada prepara o leitor e contextualiza o tema,
+                criando uma base para o restante do trabalho.</p>
+            <button onclick="showNext('content3', 'content4')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 3 -->
+        <div class="content" id="content4">
+            <h2>Desenvolvimento</h2>
+            <p><strong>Desenvolvimento:</strong> O desenvolvimento é a parte mais extensa e detalhada do TCC, onde o
+                estudante aborda o tema em profundidade. É composto por três elementos principais:</p>
+            <ul>
+                <li><strong>Revisão de Literatura:</strong> Pesquisa sobre o que já foi publicado na área, conectando o
+                    TCC ao conhecimento existente.</li>
+                <li><strong>Metodologia:</strong> Explicação dos métodos e técnicas usados para coletar e analisar os
+                    dados, justificando as escolhas metodológicas.</li>
+                <li><strong>Resultados:</strong> Apresentação dos dados coletados e das descobertas feitas durante a
+                    pesquisa.</li>
+            </ul>
+            <p><strong>Importância:</strong> O desenvolvimento demonstra a habilidade do estudante em pesquisar,
+                organizar informações e analisar dados de maneira crítica.</p>
+            <button onclick="showNext('content4', 'content5')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 4 -->
+        <div class="content" id="content5">
+            <h2>Conclusão</h2>
+            <p><strong>Conclusão:</strong> A conclusão resume os principais resultados do estudo e apresenta as
+                contribuições do trabalho, oferecendo sugestões para futuras pesquisas.</p>
+            <ul>
+                <li><strong>Resumo dos Resultados:</strong> Síntese dos principais achados.</li>
+                <li><strong>Contribuições do Trabalho:</strong> Reflexão sobre o impacto do estudo para a área de
+                    conhecimento.</li>
+                <li><strong>Sugestões para Futuros Estudos:</strong> Indicações de novas direções para pesquisa que
+                    podem expandir o tema ou abordar outros aspectos relevantes.</li>
+            </ul>
+            <p><strong>Importância:</strong> A conclusão fecha o trabalho, oferecendo uma visão final que reforça a
+                relevância do estudo e suas contribuições.</p>
+            <button onclick="showNext('content5', 'question1')">Iniciar Quiz</button>
+        </div>
+
+        <!-- Pergunta 1 -->
+        <div class="question" id="question1">
+            <h2>Pergunta 1: Por que a introdução é uma etapa importante no TCC?</h2>
+            <form>
+                <input type="radio" id="q1option1" name="q1answer" value="A">
+                <label for="q1option1">Porque é onde são apresentados o tema, os objetivos, a justificativa e o problema
+                    de pesquisa.</label><br>
+                <input type="radio" id="q1option2" name="q1answer" value="B">
+                <label for="q1option2">Porque é onde se apresentam os resultados.</label><br>
+                <input type="radio" id="q1option3" name="q1answer" value="C">
+                <label for="q1option3">Porque ela inclui as sugestões para futuras pesquisas.</label><br>
+                <input type="radio" id="q1option4" name="q1answer" value="D">
+                <label for="q1option4">Porque não é uma parte obrigatória.</label><br>
+            </form>
+            <button onclick="checkAnswer('q1answer', 'A', 'question1', 'question2')">Responder</button>
+            <div id="feedback1"></div>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question" id="question2">
+            <h2>Pergunta 2: Qual é a principal função da revisão de literatura no desenvolvimento do TCC?</h2>
+            <form>
+                <input type="radio" id="q2option1" name="q2answer" value="A">
+                <label for="q2option1">Introduzir novas ideias sem se basear em estudos anteriores.</label><br>
+                <input type="radio" id="q2option2" name="q2answer" value="B">
+                <label for="q2option2">Fornecer uma base teórica e contextualizar o tema dentro da área de
+                    estudo.</label><br>
+                <input type="radio" id="q2option3" name="q2answer" value="C">
+                <label for="q2option3">Descrever todos os métodos estatísticos.</label><br>
+                <input type="radio" id="q2option4" name="q2answer" value="D">
+                <label for="q2option4">Falar exclusivamente sobre o problema de pesquisa.</label><br>
+            </form>
+            <button onclick="checkAnswer('q2answer', 'B', 'question2', 'question3')">Responder</button>
+            <div id="feedback2"></div>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question" id="question3">
+            <h2>Pergunta 3: O que a metodologia deve conter?</h2>
+            <form>
+                <input type="radio" id="q3option1" name="q3answer" value="A">
+                <label for="q3option1">A descrição dos métodos e o porquê de sua escolha.</label><br>
+                <input type="radio" id="q3option2" name="q3answer" value="B">
+                <label for="q3option2">Exclusivamente as referências bibliográficas.</label><br>
+                <input type="radio" id="q3option3" name="q3answer" value="C">
+                <label for="q3option3">Um resumo de toda a pesquisa.</label><br>
+                <input type="radio" id="q3option4" name="q3answer" value="D">
+                <label for="q3option4">A justificativa do trabalho.</label><br>
+            </form>
+            <button onclick="checkAnswer('q3answer', 'A', 'question3', 'question4')">Responder</button>
+            <div id="feedback3"></div>
+        </div>
+
+        <!-- Pergunta 4 -->
+        <div class="question" id="question4">
+            <h2>Pergunta 4: O que deve incluir a conclusão do TCC?</h2>
+            <form>
+                <input type="radio" id="q4option1" name="q4answer" value="A">
+                <label for="q4option1">Introdução ao tema e justificativa.</label><br>
+                <input type="radio" id="q4option2" name="q4answer" value="B">
+                <label for="q4option2">Revisão de literatura com novas fontes.</label><br>
+                <input type="radio" id="q4option3" name="q4answer" value="C">
+                <label for="q4option3">Principais resultados, contribuições e sugestões para futuras pesquisas.</label><br>
+                <input type="radio" id="q4option4" name="q4answer" value="D">
+                <label for="q4option4">Detalhes dos métodos de coleta de dados.</label><br>
+            </form>
+            <button onclick="checkAnswer('q4answer', 'C', 'question4', 'conclusion')">Responder</button>
+            <div id="feedback4"></div>
+        </div>
+
+        <!-- Conclusão do Módulo -->
+        <div class="content" id="conclusion">
+            <h2>Conclusão do Módulo 3: Estrutura Básica de um TCC</h2>
+            <p>Esse módulo proporcionou uma visão completa da estrutura de um TCC, explicando cada parte para que o
+                estudante possa organizar o trabalho de maneira eficaz e dentro dos padrões acadêmicos.</p>
+            <button onclick="redirecionar()">Voltar para a página principal</button>
+        </div>
+
+    </div>
+
+    <script src="../lvl3/lvl3.js"></script>
+</body>
+
+</html>

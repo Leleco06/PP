@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 7: Análise e Interpretação de Resultados</title>
+    <link rel="stylesheet" href="../lvl7/lvl7.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Módulo 7: Análise e Interpretação de Resultados -->
+
+        <!-- Objetivo do Módulo -->
+        <div class="content active" id="content1">
+            <h2>Módulo 7: Análise e Interpretação de Resultados</h2>
+            <p><strong>Objetivo do Módulo:</strong><br>
+                Este módulo ensina o estudante a interpretar os dados coletados, destacando como transformá-los em resultados significativos para o TCC. A análise e interpretação de dados são etapas fundamentais para responder às perguntas de pesquisa e validar as hipóteses do trabalho.
+            </p>
+            <button onclick="showNext('content1', 'content2')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 1 -->
+        <div class="content" id="content2">
+            <h2>1. Importância da Análise e Interpretação de Resultados</h2>
+            <p>A análise e interpretação dos dados transformam as informações coletadas em conclusões significativas. Sem uma análise adequada, os dados permanecem brutos e sem valor prático para a pesquisa. Interpretar os resultados corretamente permite ao pesquisador identificar padrões, responder às hipóteses e verificar se os objetivos do TCC foram alcançados.</p>
+            <button onclick="showNext('content2', 'question1')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 1 -->
+        <div class="question" id="question1">
+            <h2>Pergunta 1: Qual é o principal objetivo da análise de resultados no TCC?</h2>
+            <form>
+                <input type="radio" id="q1option1" name="q1answer" value="A">
+                <label for="q1option1">Transformar dados brutos em conclusões significativas para a pesquisa.</label><br>
+
+                <input type="radio" id="q1option2" name="q1answer" value="B">
+                <label for="q1option2">Apenas organizar as fontes bibliográficas.</label><br>
+
+                <input type="radio" id="q1option3" name="q1answer" value="C">
+                <label for="q1option3">Escolher o tema da pesquisa.</label><br>
+
+                <input type="radio" id="q1option4" name="q1answer" value="D">
+                <label for="q1option4">Substituir a revisão de literatura.</label><br>
+            </form>
+            <button onclick="checkAnswer('q1answer', 'A', 'question1', 'content3')">Responder</button>
+            <div id="feedback1"></div>
+        </div>
+
+        <!-- Conteúdo 2 -->
+        <div class="content" id="content3">
+            <h2>2. Métodos de Análise Quantitativa e Qualitativa</h2>
+            <p>Os métodos de análise podem ser quantitativos ou qualitativos, dependendo do tipo de dados coletados:</p>
+            <ul>
+                <li><strong>Análise Quantitativa:</strong> Utiliza métodos estatísticos para interpretar dados numéricos, possibilitando identificar tendências e relações entre variáveis.</li>
+                <li><strong>Análise Qualitativa:</strong> Explora dados não numéricos, como textos e opiniões, buscando padrões e interpretações subjetivas que expliquem comportamentos e fenômenos.</li>
+            </ul>
+            <button onclick="showNext('content3', 'content4')">Próximo</button>
+        </div>
+
+        <!-- Conteúdo 3 -->
+        <div class="content" id="content4">
+            <h2>3. Organização e Apresentação dos Resultados</h2>
+            <p>Organizar e apresentar os resultados de forma clara é essencial. Use tabelas, gráficos e esquemas para tornar as informações mais acessíveis e visuais. Estruture os resultados por tópicos ou subtemas para facilitar a leitura e relacionar diretamente cada achado aos objetivos da pesquisa.</p>
+            <button onclick="showNext('content4', 'question2')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="question" id="question2">
+            <h2>Pergunta 2: Qual é a função das tabelas e gráficos na apresentação de resultados?</h2>
+            <form>
+                <input type="radio" id="q2option1" name="q2answer" value="A">
+                <label for="q2option1">Facilitar a visualização e compreensão das informações.</label><br>
+
+                <input type="radio" id="q2option2" name="q2answer" value="B">
+                <label for="q2option2">Substituir a conclusão do trabalho.</label><br>
+
+                <input type="radio" id="q2option3" name="q2answer" value="C">
+                <label for="q2option3">Apenas preencher o conteúdo do TCC.</label><br>
+
+                <input type="radio" id="q2option4" name="q2answer" value="D">
+                <label for="q2option4">Completar o resumo do TCC.</label><br>
+            </form>
+            <button onclick="checkAnswer('q2answer', 'A', 'question2', 'content5')">Responder</button>
+            <div id="feedback2"></div>
+        </div>
+
+        <!-- Conteúdo 4 -->
+        <div class="content" id="content5">
+            <h2>4. Interpretação dos Resultados</h2>
+            <p>Após a análise e organização, é essencial interpretar os resultados, conectando-os ao referencial teórico e discutindo suas implicações. Explique como os dados confirmam ou contradizem as hipóteses e objetivos da pesquisa, e descreva possíveis limitações dos resultados, considerando fatores que podem ter influenciado a pesquisa.</p>
+            <button onclick="showNext('content5', 'question3')">Próximo</button>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="question" id="question3">
+            <h2>Pergunta 3: Qual é o papel da interpretação de resultados no TCC?</h2>
+            <form>
+                <input type="radio" id="q3option1" name="q3answer" value="A">
+                <label for="q3option1">Conectar os resultados ao referencial teórico e avaliar seu significado para a pesquisa.</label><br>
+
+                <input type="radio" id="q3option2" name="q3answer" value="B">
+                <label for="q3option2">Apresentar dados sem análise.</label><br>
+
+                <input type="radio" id="q3option3" name="q3answer" value="C">
+                <label for="q3option3">Escolher o tema do trabalho.</label><br>
+
+                <input type="radio" id="q3option4" name="q3answer" value="D">
+                <label for="q3option4">Apenas concluir o TCC sem avaliação.</label><br>
+            </form>
+            <button onclick="checkAnswer('q3answer', 'A', 'question3', 'conclusion')">Responder</button>
+            <div id="feedback3"></div>
+        </div>
+
+        <!-- Conclusão do Módulo -->
+        <div class="content" id="conclusion">
+            <h2>Conclusão do Módulo 7: Análise e Interpretação de Resultados</h2>
+            <p>A análise e interpretação dos resultados são etapas fundamentais para dar significado à pesquisa. Organizando e interpretando os dados de forma clara e conectando-os aos objetivos, o pesquisador valida sua contribuição acadêmica e amplia o entendimento do tema estudado.</p>
+            <button onclick="redirecionar()">Voltar para a página principal</button>
+        </div>
+
+    </div>
+
+    <script src="../lvl7/lvl7.js"></script>
+</body>
+
+</html>

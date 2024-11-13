@@ -1,6 +1,107 @@
-/* Resetar a Window */
-*{
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
+}
+
+/* Fonte geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+
+}
+
+/* Container 1 - Cabeçalho */
+.container1 {
+    background: linear-gradient(to bottom, #19385D 0%, #A2B7D0 66%, #FFFFFF 100%);
+    padding: 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    max-height: 100vh;
+    height: 400px;
+}
+
+
+.title {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+
+.font1 {
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.font2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+header h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+/* Botão de iniciar */
+.start-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: #274059;
+    color: white;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #3a4f6b;
+}
+
+/* Container 2 - Grid de módulos */
+.container2 {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    /* Define um espaço de 20px entre os módulos */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.module-grid a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #274059;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+
+.module-grid a:hover {
+    background-color: #3a4f6b;
 }

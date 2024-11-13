@@ -65,3 +65,27 @@ document.getElementById('registerForm').addEventListener('submit', async (e) => 
 });
 
 
+// --------------------------------------------PROGRESSO--------------------------------------------//
+
+import { getDatabase, ref, set, get, query, orderByChild, equalTo, onValue, update, runTransaction, limitToFirst, startAfter } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-database.js";
+
+async function signUp(name, email, password, ) {
+    try {
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+        const newUser = userCredential.user;
+        console.log('Usuário criado:', newUser);
+        await set(ref(db, users/${newUser.uid}), {
+            userName: name,
+            email: newUser.email,
+        });
+
+    } catch (error) {
+        console.error(Erro ao criar usuário: ${error});
+    }
+}
+
+
+update(ref(db, company/${companyId}/games),{
+
+
+})
